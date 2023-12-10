@@ -18,7 +18,7 @@ const addSubTask = () => {
 }
 
 const notFinishedSubTasks = computed(() =>
-  subTasks.value.filter((subTask) => subTask.done === false)
+  subTasks.value.filter((subTask) => !subTask.done)
 )
 </script>
 
